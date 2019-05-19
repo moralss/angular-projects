@@ -1,0 +1,15 @@
+<div>
+  <label for="">Enter text</label>
+  <input [(ngModel)]="name" placeholder="name"/>
+  <h1> {{name}} </h1>
+
+  
+  <div>
+    <label for="">meet the mentors</label>
+    
+    <li *ngFor="let name of listOfNames">
+      <span (click)="makeUppcase(name)" class="{{name.style}}">{{name.name}}</span>
+
+    </li>
+  </div>
+</div>
